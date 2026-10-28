@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'permissions' => [
+        'websocket_*' => 'Erlaubt den Zugriff auf den WebSocket dieses Servers.',
+        'control_console' => 'Erlaubt das Senden von Befehlen an die Serverkonsole.',
+        'control_start' => 'Erlaubt das Starten des Servers.',
+        'control_stop' => 'Erlaubt das Stoppen des Servers.',
+        'control_restart' => 'Erlaubt den Neustart des Servers.',
+        'control_kill' => 'Erlaubt das zwangsweise Beenden des Serverprozesses.',
+        'user_create' => 'Erlaubt das Hinzufügen von Unterbenutzern.',
+        'user_read' => 'Erlaubt das Anzeigen der Unterbenutzer dieses Servers.',
+        'user_update' => 'Erlaubt das Ändern der Unterbenutzer dieses Servers.',
+        'user_delete' => 'Erlaubt das Löschen von Unterbenutzern dieses Servers.',
+        'file_create' => 'Erlaubt das Erstellen von Dateien und Verzeichnissen.',
+        'file_read' => 'Erlaubt das Anzeigen und Lesen der Serverdateien und Verzeichnisse.',
+        'file_update' => 'Erlaubt das Bearbeiten von Serverdateien und Verzeichnissen.',
+        'file_delete' => 'Erlaubt das Löschen von Dateien und Verzeichnissen.',
+        'file_archive' => 'Erlaubt das Erstellen und Entpacken von Archiven.',
+        'file_sftp' => 'Erlaubt die genannten Dateioperationen über einen SFTP-Client.',
+        'allocation_read' => 'Erlaubt den Zugriff auf die Netzwerk-Allocations.',
+        'allocation_update' => 'Erlaubt das Ändern der Netzwerk-Allocations.',
+        'database_create' => 'Erlaubt das Erstellen neuer Datenbanken.',
+        'database_read' => 'Erlaubt das Anzeigen der Datenbanken des Servers.',
+        'database_update' => 'Erlaubt das Ändern einer Datenbank. Ohne die Berechtigung „Passwort anzeigen“ darf das Passwort nicht geändert werden.',
+        'database_delete' => 'Erlaubt das Löschen von Datenbanken.',
+        'database_view_password' => 'Erlaubt das Anzeigen von Datenbankpasswörtern.',
+        'schedule_create' => 'Erlaubt das Erstellen von Zeitplänen.',
+        'schedule_read' => 'Erlaubt das Anzeigen von Zeitplänen.',
+        'schedule_update' => 'Erlaubt das Bearbeiten vorhandener Zeitpläne.',
+        'schedule_delete' => 'Erlaubt das Löschen von Zeitplänen.',
+    ],
+];
