@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-rock-theme="{{ config('branding.theme_preset') === 'blue' ? 'blue' : 'makima' }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-rock-theme="{{ config('branding.theme_preset') === 'blue' ? 'blue' : 'makima' }}">
     <head>
         <title>{{ config('app.name', 'Pterodactyl') }}</title>
 
@@ -35,7 +35,7 @@
         @yield('assets')
 
         @include('layouts.scripts')
-        <link rel="stylesheet" href="/themes/pterodactyl/css/rock-matte.css?v=20260927-2">
+        <link rel="stylesheet" href="/themes/pterodactyl/css/rock-matte.css?v=20261028-zapx-1">
     </head>
     <body class="{{ $css['body'] ?? 'bg-neutral-50' }}">
         @section('content')
