@@ -823,3 +823,44 @@ body button:focus-visible {
         transition: none;
     }
 }
+
+/* Keep native select menus readable with Rockdactyl's dark client palette. */
+#app select {
+    color-scheme: dark !important;
+}
+#app select option,
+#app select optgroup {
+    background-color: var(--shell-panel-strong, #181b20) !important;
+    color: var(--shell-text, #f1f5ff) !important;
+}
+#app select option:disabled {
+    color: var(--shell-muted, #8793aa) !important;
+}
+
+/* Startup variables: one, two, or three equal-width columns by viewport size. */
+#app .rock-startup-page {
+    max-width: none !important;
+    width: auto !important;
+    min-width: 0;
+}
+#app .rock-startup-variable-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+#app .rock-startup-variable-grid > * {
+    min-width: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+@media (min-width: 768px) {
+    #app .rock-startup-variable-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1500px) {
+    #app .rock-startup-variable-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
