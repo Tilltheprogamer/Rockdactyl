@@ -1,7 +1,7 @@
 @php($adminTheme = in_array(config('branding.theme_preset'), ['makima', 'blue'], true) ? config('branding.theme_preset') : 'makima')
 @php($adminAccent = $adminTheme === 'blue' ? '#5b8cff' : '#c94f59')
 <!DOCTYPE html>
-<html data-rock-theme="{{ $adminTheme }}" data-rock-motion="{{ config('branding.motion_enabled', true) ? 'full' : 'reduced' }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-rock-theme="{{ $adminTheme }}" data-rock-motion="{{ config('branding.motion_enabled', true) ? 'full' : 'reduced' }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,7 +50,7 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
             <![endif]-->
         @show
-        <link rel="stylesheet" href="/themes/pterodactyl/css/rock-matte.css?v=20260927-2">
+        <link rel="stylesheet" href="/themes/pterodactyl/css/rock-matte.css?v=20261028-zapx-1">
     </head>
     <body class="hold-transition skin-blue fixed sidebar-mini">
         <div class="wrapper">
